@@ -1,0 +1,129 @@
+
+/* proyectos */
+
+.projects__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects__containers{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.project_reverse{
+    flex-direction: column-reverse;
+}
+.project .img__container{
+    width: 100%;
+    position: relative;
+}
+.project .img__container .img_project{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.project .project__info{
+    width: 100%;
+}
+.img__container .tecnologias__project{
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    opacity: 0.5;
+    width: 100%;
+    height: 3rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.img__container:hover .tecnologias__project{
+    padding: 10px;
+    height: 6rem;
+    opacity: 1;
+}
+.tecnologias__project h3{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+.tecnologias__project ul{
+    display: flex;
+    gap: 15px;
+}
+
+.tecnologias__project ul li img{
+    height: 2rem;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+
+}
+.project .project__info h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.project__info p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+}
+.project .buttons__container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.project .buttons__container .btn{
+    margin-right: 20px;
+}
+
+/* RESPONSIVE */
+@media(min-width:864px){
+
+    .project{
+        flex-direction: row;
+    }
+    .project .img__container{
+        width: 52%;
+        position: relative;
+    }
+    .project .img__container .img_project{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .project .project__info{
+        width: 40%;
+    }
+    .tecnologias__project h3{
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+    .tecnologias__project ul{
+        gap: 15px;
+    }
+    .tecnologias__project ul li img{
+        height: 32px;
+    }
+    .img__container:hover .tecnologias__project{
+        height: 6.6rem;
+    }
+}

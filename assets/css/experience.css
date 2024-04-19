@@ -1,0 +1,84 @@
+/* experience */
+.experience__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+.open_work{
+    position: absolute;
+    top: 9.5rem;
+    background: rgba(var(--t-figma), 0.10);
+    border: 1px solid rgb(var(--t-figma));
+    padding: 8px 30px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.experience__containers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.experience__containers .container{
+    padding: 25px 15px;
+}
+.experience__containers .company__job{
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.experience__containers .header img{
+    height: 60px;
+}
+.experience__containers .header p{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+.experience__containers .body ul li{
+    list-style: outside;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.tecnologias ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.tecnologias ul li img{
+    height: 3rem;
+}
+
+.btn__experience{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.hover__container:hover{
+   border: 1px solid #fff;
+   background: rgba(217, 217, 217, 0.10)
+}
+/* RESPONSIVE */
+@media(min-width:864px){
+    .experience__containers .container{
+        padding: 25px;
+    }
+    .experience__containers{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .experience__containers .container{
+        width: 50%;
+    }
+}

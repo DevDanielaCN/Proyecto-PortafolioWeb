@@ -1,0 +1,89 @@
+@import url(reset.css);
+@import url(style.css);
+@import url(about.css);
+@import url(experience.css);
+@import url(projects.css);
+@import url(skill-hobbies.css);
+@import url(contact.css);
+@import url(education.css);
+
+@font-face {
+    font-family: 'mr';
+    src: url(../font/Manrope-VariableFont_wght.ttf);
+}
+
+:root{
+    /* Colores */
+    --bg: #0C0D1D;
+    --primary-color: #2193D3;
+    --primary-color-hover: #007ACC;
+    --lyrics: #C2C6DA;
+
+    /* Card */
+    --card-color: #D9D9D9;
+    --bg-card: rgba(217, 217, 217, 0.05);
+    --stroke-card: rgba(217, 217, 217, 0.45);
+
+    /* Tecnologias */
+    --t-html: 255, 75, 0;
+    --t-css: 53, 168, 219;
+    --t-js: 240, 219, 79;
+    --t-php: 119,123, 179;
+    --t-laravel: 240, 83, 64;
+    --t-bootstrap: 121, 18, 248;
+    --t-react: 97, 218, 251;
+    --t-tailwind: 56, 189, 248;
+    --t-jquery: 8, 104, 172;
+    --t-mysql: 0, 97, 138;
+    --t-git: 243, 79, 41;
+    --t-vsc: 36, 171, 242;
+    --t-figma: 10, 207, 131;
+    --t-filezilla: 191, 1, 1;
+
+    /* hobies */
+    --h-music: 255, 95, 150;
+    --h-film: 85, 161, 255;
+    --h-play:  69, 66, 90;
+    --h-learn: 255, 224, 47;
+    --h-pets: 254, 254, 254;
+    --h-sleep: 33, 147, 211;
+
+    /* elipses */
+    --e-1: #00f5d4;
+    --e-2: #008000;
+    --e-3: #8f7000;
+    --e-4: #C65CCD;
+    --e-5: #9b5de5;
+
+}
+html{
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'mr';
+}
+body{
+    
+    background: var(--bg);
+    position: relative;
+    color: var(--lyrics);
+}
+input,
+textarea{
+    font-family: 'mr';
+}
+/* RESPONSIVE */
+@media(min-width:768px){
+    html{
+        font-size: 11px;
+    }
+}
+@media(min-width:864px){
+    html{
+        font-size: 12px;
+    }
+}
+@media(min-width:1440px){
+    html{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,235 @@
+/* Skill and hobbies */
+.element__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+}
+.element__container .label_element{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: scale(0.1);
+    text-align: center;
+    position: absolute;
+    top: -70%;
+    transition: all 0.4s ease-in-out; 
+    white-space: nowrap;
+}
+.element__container  .label_element::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px); 
+        z-index: -10;
+        border-radius: 15px;
+} 
+.element__container .skill,
+.element__container .hobbie {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    border-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.element__container li:hover .label_element{
+    opacity: 1;
+    transform: scale(1);
+    display: inline-flex;
+}
+
+/* skill */
+.skill__section ,
+.hobbies_section,
+.contact__section{
+    flex-direction: column;
+}
+
+.skill__container .skill::after,
+.hobbies__container .hobbie::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px); /* Aplica el desenfoque al contenido */
+    z-index: -10;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill__container .skill:hover,
+.skill__container .skill:hover .label_element,
+.hobbies__container .hobbie:hover,
+.hobbies__container .hobbie:hover .label_element{
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+.skill__container .skill:hover,
+.hobbies__container .hobbie:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px;
+}
+/* COLORES */
+.skill__container .html{
+    --hover-color: rgb(var(--t-html));
+}
+.skill__container .html::after{
+    background: rgba(var(--t-html), 0.15);
+}
+
+.skill__container .css{
+    --hover-color: rgb(var(--t-css));
+}
+.skill__container .css::after{
+    background: rgba(var(--t-css), 0.15);
+}
+
+.skill__container .js{
+    --hover-color: rgb(var(--t-js));
+}
+.skill__container .js::after{
+    background: rgba(var(--t-js), 0.15);
+}
+
+.skill__container .php{
+    --hover-color: rgb(var(--t-php));
+}
+.skill__container .php::after{
+    background: rgba(var(--t-php), 0.15);
+}
+
+.skill__container .laravel{
+    --hover-color: rgb(var(--t-laravel));
+}
+.skill__container .laravel::after{
+    background: rgba(var(--t-laravel), 0.15);
+}
+
+.skill__container .bootstrap{
+    --hover-color: rgb(var(--t-bootstrap));
+}
+.skill__container .bootstrap::after{
+    background: rgba(var(--t-bootstrap), 0.15);
+}
+
+.skill__container .react{
+    --hover-color: rgb(var(--t-react));
+}
+.skill__container .react::after{
+    background: rgba(var(--t-react), 0.15);
+}
+
+.skill__container .tailwind{
+    --hover-color: rgb(var(--t-tailwind));
+}
+.skill__container .tailwind::after{
+    background: rgba(var(--t-tailwind), 0.15);
+}
+
+.skill__container .jquery{
+    --hover-color: rgb(var(--t-jquery));
+}
+.skill__container .jquery::after{
+    background: rgba(var(--t-jquery), 0.15);
+}
+
+.skill__container .mysql{
+    --hover-color: rgb(var(--t-mysql));
+}
+.skill__container .mysql::after{
+    background: rgba(var(--t-mysql), 0.15);
+}
+
+.skill__container .git{
+    --hover-color: rgb(var(--t-git));
+}
+.skill__container .git::after{
+    background: rgba(var(--t-git), 0.15);
+}
+
+.skill__container .vsc{
+    --hover-color: rgb(var(--t-vsc));
+}
+.skill__container .vsc::after{
+    background: rgba(var(--t-vsc), 0.15);
+}
+
+.skill__container .figma{
+    --hover-color: rgb(var(--t-figma));
+}
+.skill__container .figma::after{
+    background: rgba(var(--t-figma), 0.15);
+}
+
+.skill__container .filezilla{
+    --hover-color: rgb(var(--t-filezilla));
+}
+.skill__container .filezilla::after{
+    background: rgba(var(--t-filezilla), 0.15);
+}
+
+/* hobbies */
+
+.hobbies__container .music{
+    --hover-color: rgb(var(--h-music));
+}
+.hobbies__container .music::after{
+    background: rgba(var(--h-music), 0.15);
+}
+
+.hobbies__container .film{
+    --hover-color: rgb(var(--h-film));
+}
+.hobbies__container .film::after{
+    background: rgba(var(--h-film), 0.15);
+}
+
+.hobbies__container .play{
+    --hover-color: rgb(var(--t-php));
+}
+.hobbies__container .play::after{
+    background: rgba(var(--t-php), 0.15);
+}
+
+.hobbies__container .learn{
+    --hover-color: rgb(var(--h-learn));
+}
+.hobbies__container .learn::after{
+    background: rgba(var(--h-learn), 0.15);
+}
+
+.hobbies__container .pets{
+    --hover-color: rgb(var(--h-pets));
+}
+.hobbies__container .pets::after{
+    background: rgba(var(--h-pets), 0.15);
+}
+
+.hobbies__container .sleep{
+    --hover-color: rgb(var(--h-sleep));
+}
+.hobbies__container .sleep::after{
+    background: rgba(var(--h-sleep), 0.15);
+}
+/* RESPONSIVE */
+@media(min-width:864px){
+
+    .element__container{
+        width: 100%;
+        gap: 40px;
+    }
+    .element__container .label_element{
+        top: -80%;
+    }
+}

@@ -1,0 +1,79 @@
+/* formacion academica */
+.education__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.education__containers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.education__container{
+    width: 100%;
+    padding: 0;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.education__container .education__description{
+    border-top: 1px solid var(--stroke-card);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.education__container .img__container{
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    width: 100%;
+}
+.education__container img{
+    width: auto;
+    height: 140px;
+    object-fit: contain;
+}
+.education__container .education__description h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.education__container .education__description p{
+    font-size: 1rem;
+    font-weight: lighter;
+    bottom: 25px;;
+}
+.education__container:hover{
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+.education__container:hover .education__description{
+    border-top: 1px solid #fff;
+}
+
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .education__containers{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media(min-width:864px){
+    
+    .education__container{
+        width: 40%;
+    }
+    .education__container .img__container{
+        padding: 40px;
+    }
+}
