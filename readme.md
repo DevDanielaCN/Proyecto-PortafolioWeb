@@ -1,7 +1,7 @@
 
 # Challenge Portafolio (Alura)
 
-Este proyecto es mi Portafolio personal, credo como prte de un desafío en el programa Oracle Next Education. Fue desarrollado utilizando HTML, CSS y JavaScript apra mostrar mis habilidades, experiencia y proyectos.
+Este proyecto es mi Portafolio personal, credo como prte de un desafío en el programa Oracle Next Education. Fue desarrollado utilizando HTML, CSS y JavaScript para mostrar mis habilidades, experiencia y proyectos.
 
 ## Demo
 
