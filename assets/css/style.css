@@ -7,6 +7,7 @@ header{
     height: 65px;
     padding-inline: 15px;
     border-bottom: 1px solid var(--stroke-card);
+    background-color: rgba(12, 13, 29, 0.5);
 
 }
 header::after{
@@ -29,7 +30,6 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 header nav h1{
     font-size: 2rem;
@@ -225,7 +225,7 @@ footer{
     background-image: url(../img/bg2.png);
 }
 
-
+/* ANIMACIONES */
 
 @keyframes flotar {
     0%{
@@ -235,6 +235,23 @@ footer{
         transform: translateY(-20px);
     }
 }
+
+/* Estilo para la animación de carga */
+.loader {
+    margin: auto;
+    width: 40px;
+    display: none;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,var(--primary-color) 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,var(--primary-color));
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }
 
 /* RESPONSIVE */
 @media(min-width:864px){
