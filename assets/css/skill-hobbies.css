@@ -19,6 +19,7 @@
     transition: all 0.4s ease-in-out; 
     white-space: nowrap;
 }
+
 .label_element::after{
         content: '';
         position: absolute;
@@ -37,10 +38,16 @@
     width: 70px;
     border-radius: 15px;
     border-color: none;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.skill img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .element__container li:hover .label_element{
     opacity: 1;
@@ -121,6 +128,12 @@
 }
 .skill__container .bootstrap::after{
     background: rgba(var(--t-bootstrap), 0.15);
+}
+.skill__container .purple-2{
+    --hover-color: rgb(var(--t-purple-2));
+}
+.skill__container .purple-2::after{
+    background: rgba(var(--t-purple-2), 0.15);
 }
 
 .skill__container .react{

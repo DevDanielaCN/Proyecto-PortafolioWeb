@@ -38,8 +38,8 @@ header nav h1{
     gap: 10px;
     font-weight: 600;
 }
-header nav h1 img{
-    height: 2rem;
+header nav h1 .logo-header{
+    height: 3rem;
 }
 header nav ul{
     display: flex;
